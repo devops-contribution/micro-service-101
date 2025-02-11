@@ -1,0 +1,8 @@
+# This docker-compose should be used only in dev environment.
+
+version: "3"
+services:
+  hello-world:
+    build: devops/.
+    ports:
+      - "8099:8080"
