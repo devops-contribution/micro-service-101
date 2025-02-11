@@ -1,1 +1,1 @@
-# spring-boot-ms-01
+# micro-service-101
