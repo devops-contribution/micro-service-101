@@ -59,7 +59,7 @@ jobs:
       pr_title: "Bump version to ${{ needs.build.outputs.image_tag }}"
       pr_body: "Automated update of application version."
       branch_name: "update-tag-${{ needs.build.outputs.image_tag }}"
-      updated_version: "${{ needs.build.outputs.image_tag }}"
+      updated_version: "spring-boot:${{ needs.build.outputs.image_tag }}"
       channel_id: "C08BAR4AXCH"
     secrets:
       GH_PAT: ${{ secrets.GH_PAT }}
