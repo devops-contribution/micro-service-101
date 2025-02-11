@@ -44,9 +44,9 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker Image with Context
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         with:
           context: .
           file: devops/Dockerfile
           push: true
-          tags: "spring-boot:$TAG"
+          tags: spring-boot:$TAG
