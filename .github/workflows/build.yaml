@@ -49,4 +49,4 @@ jobs:
           context: .
           file: devops/Dockerfile
           push: true
-          tags: "spring-boot:${{ env.TAG }}"
+          tags: "muk007/spring-boot:${{ env.TAG }}"
