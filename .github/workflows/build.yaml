@@ -61,6 +61,7 @@ jobs:
       branch_name: "update-tag-${{ needs.build.outputs.image_tag }}"
       updated_version: "spring-boot:${{ needs.build.outputs.image_tag }}"
       channel_id: "C08BAR4AXCH"
+      service_name: "service: micro-service-101"
     secrets:
       GH_PAT: ${{ secrets.GH_PAT }}
       SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
