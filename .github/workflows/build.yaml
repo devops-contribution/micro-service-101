@@ -3,6 +3,10 @@ name: Build and Deploy
 on:
   push:
     brnanches: ["main"]
+    paths:
+      - "src/**"
+      - "devops/**"
+    
 
 jobs:
   build:
